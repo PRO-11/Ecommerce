@@ -26,12 +26,12 @@ const Footer = () => {
       <div className="rightFooter">
         <h4>Follow Us</h4>
 
-<a href="http://instagram.com/pgupta_4596" > <InstagramIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
+<a href="http://instagram.com/pgupta_4596" target="blank"> <InstagramIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
  
  
-<a href="https://m.facebook.com/pratham.gupta.522"><FacebookIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
+<a href="https://m.facebook.com/pratham.gupta.522" target="blank"><FacebookIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
  
-<a href="https://www.linkedin.com/in/pratham-gupta-58105b238"><LinkedInIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
+<a href="https://www.linkedin.com/in/pratham-gupta-58105b238" target="blank"><LinkedInIcon className="instagramSvgIcon my-3" style={{"color":"red"}}/></a>
 
       
       </div>
