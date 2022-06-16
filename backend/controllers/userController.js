@@ -8,8 +8,9 @@ const cloudinary = require("cloudinary");
 
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   let myCloud;
+  console.log(req.body.avatar)
   if(req.body.avatar==="/Profile.png"){
-  myCloud = await cloudinary.v2.uploader.upload("https://res.cloudinary.com/pro1/image/upload/v1654539973/avatars/ucjyu6mn61ruanoonxj5.png", {
+  myCloud = await cloudinary.v2.uploader.upload("https://res.cloudinary.com/pro1/image/upload/v1654786657/avatars/bupteqwmdgcstforna7i.png", {
       folder: "avatars",
       width: 150,
       crop: "scale",
@@ -32,7 +33,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     password,
     avatar: {
       public_id: myCloud.public_id,
-      url: myCloud.secure_url?myCloud.secure_url:"https://res.cloudinary.com/pro1/image/upload/v1654474023/avatars/Profile_yj9wtc.png",
+      url: myCloud.secure_url?myCloud.secure_url:"https://res.cloudinary.com/pro1/image/upload/v1654786657/avatars/bupteqwmdgcstforna7i.png",
     },
   });
 
